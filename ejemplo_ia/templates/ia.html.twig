@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Asistente IA en Symfony</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; }
+        .chat { border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: auto; margin-bottom: 10px; background: #f9f9f9; }
+        .user { color: blue; }
+        .assistant { color: green; }
+        form { display: flex; }
+        input[type="text"] { flex-grow: 1; padding: 8px; font-size: 1em; }
+        input[type="submit"] { padding: 8px 16px; font-size: 1em; }
+    </style>
+</head>
+<body>
+    <h1>Asistente IA en Symfony</h1>
+
+    <div class="chat">
+        {% for msg in messages %}
+            <p>
+                <strong class="{{ msg.role == 'user' ? 'user' : (msg.role == 'assistant' ? 'assistant' : '') }}">
+                    {{ msg.role|capitalize }}:
+                </strong>
+                {{ msg.content|nl2br }}
+            </p>
+        {% endfor %}
+    </div>
+
+    <form method="post" action="{{ path('ia') }}">
+        <input type="text" name="prompt" autocomplete="off" placeholder="Escribe tu mensaje aquí..." value="{{ userMessage|default('') }}" required />
+        <input type="submit" value="Enviar" />
+    </form>
+</body>
+</html>
