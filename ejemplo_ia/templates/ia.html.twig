@@ -18,12 +18,14 @@
 
     <div class="chat">
         {% for msg in messages %}
-            <p>
-                <strong class="{{ msg.role == 'user' ? 'user' : (msg.role == 'assistant' ? 'assistant' : '') }}">
-                    {{ msg.role|capitalize }}:
-                </strong>
-                {{ msg.content|nl2br }}
-            </p>
+            {% if msg.role != 'system' %}
+                <p>
+                    <strong class="{{ msg.role == 'user' ? 'user' : (msg.role == 'assistant' ? 'assistant' : '') }}">
+                        {{ msg.role|capitalize }}:
+                    </strong>
+                    {{ msg.content|nl2br }}
+                </p>
+            {% endif %}
         {% endfor %}
     </div>
 
