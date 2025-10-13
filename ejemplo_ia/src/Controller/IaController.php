@@ -8,7 +8,7 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class IaController extends AbstractController
 {
-    private const API_KEY = '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';
+    private const API_KEY = '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'; //Esta no sirve
 
     private function generateText(array $messages): string
     {
