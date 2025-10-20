@@ -27,6 +27,9 @@
 ## Enlaces de webs bonitas/bien diseñadas
 1. [Página del tarot](https://tarotoo.com/es/)
 2. [Página de pasta de dientes](https://www.marvis.com/spain/es/)
+3. [Fuente Titulos](https://fontesk.com/year-font/)
+4. [Fuente Titulos2](https://fontesk.com/y-1999-k-font/)
+5. [Fuente titulos3 o parrafos](https://fontesk.com/intranet-font/)
 
 ## Enlaces Tamagotchi
 1. [Explicación Passwords Entama/Uratama](https://curlour.neocities.org/en/tmgc/entama/expw)
