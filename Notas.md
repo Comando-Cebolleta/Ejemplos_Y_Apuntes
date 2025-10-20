@@ -31,7 +31,5 @@
 4. [Fuente Titulos2](https://fontesk.com/y-1999-k-font/)
 5. [Fuente titulos3 o parrafos](https://fontesk.com/intranet-font/)
 
-## Enlaces Tamagotchi
-1. [Explicación Passwords Entama/Uratama](https://curlour.neocities.org/en/tmgc/entama/expw)
-3. [Más explicación Entama/Uratama Passwords](https://www.tapatalk.com/groups/tamazone/explanation-of-e-tamago-passwords-t2615.html)
+
 
